@@ -19,7 +19,7 @@
         #nav .qbtn.active { border-color: blue; background: blue; color: white; }
         #nav .qbtn.answered-correct { border-color: green; background: #d4edda; }
         #nav .qbtn.answered-wrong { border-color: red; background: #f8d7da; }
-        #status { margin: 20px 0; padding: 10px; background: #fff3cd; border-radius: 8px; }
+        #status { margin: 20px 0; padding: 10px; border-radius: 8px; }
         #status.error { background: #f8d7da; color: #721c24; }
         #status.success { background: #d4edda; color: #155724; }
     </style>
@@ -51,6 +51,9 @@
     <div style="margin-top:20px; border-top:1px solid #ccc; padding-top:20px;">
         <p>✅ Correct: <span id="correctCount">0</span> &nbsp;| ❌ Wrong: <span id="wrongCount">0</span> &nbsp;| ⏱️ Answered: <span id="answeredCount">0</span></p>
     </div>
+
+    <!-- ─── THIS IS THE IMPORTANT LINE ──────────────────────────────── -->
+    <script src="questions.js"></script>
 
     <script>
         // ─── Check if QUESTION_BANK loaded ──────────────────────────────
